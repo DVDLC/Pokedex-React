@@ -1,0 +1,135 @@
+body{
+    position: relative;
+}
+
+
+.dashboard-header{
+    background-color: #FB1B1B;
+    width: 100%;
+    height: 70px;
+}
+
+.background{
+    background-color: #000;
+    width: 100%;
+    height: 50%;
+}
+
+.left-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.left-area img{
+    width: 190px;
+}
+
+.sidebar{
+    background-color: #000;
+    z-index: 1;
+    position: absolute;
+    padding-top: 30px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar .profile-image{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.sidebar h4{
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-align: left;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.sidebar a:hover{
+    background-color: #19B3d3;
+}
+
+.sidebar i{
+    padding-right: 10px;
+}
+
+.sidebar-btn{
+    z-index: 1;
+    color: #fff;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    width: 60px;
+    position: absolute;
+    cursor: pointer;
+    right: 40px;
+    top: 40px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.25s;
+}
+
+.sidebar-btn:hover{
+    box-shadow: 0 0 1rem #555 inset;
+    width: 59.5px;
+    height: 59.5px;
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+   font-size: 20px;
+   margin-left: 170px;
+   width: 80px;
+}
+
+#check {
+    display: none;
+}
+
+.pokeball{
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    top: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    border: 8px solid #000;
+}
+
+.pokeball div{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    margin: auto; 
+}
