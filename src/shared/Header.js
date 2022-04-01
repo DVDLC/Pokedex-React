@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import Pokelogo from '../assets/images/Pokelogo.png'
 function Header() {
     return (
